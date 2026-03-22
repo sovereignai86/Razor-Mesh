@@ -34,7 +34,7 @@ Built and fully tested on Android/Termux — multi-node discovery, health monito
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/sovreignai86/razor-mesh.git
+   git clone https://github.com/sovereignai86/razor-mesh.git
    cd razor-mesh
 Install dependencies & project:
 pkg install python-cryptography -y
