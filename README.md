@@ -39,5 +39,5 @@ Built and fully tested on Android/Termux — multi-node discovery, health monito
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/razor-mesh.git
-   cd razor-mesh
+   git clone https://github.con/sovereignai86/razor-mesh.git
+   cd razor-mesh,
