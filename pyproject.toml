@@ -1,0 +1,11 @@
+[project]
+name = "razor-mesh"
+version = "5.2.0"
+description = "Secure UDP mesh + AES-GCM RazorLink Bluetooth transport"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = ["cryptography>=43.0.0"]
+
+[project.scripts]
+razor-mesh = "razor_mesh:main"
