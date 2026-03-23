@@ -6,7 +6,7 @@ Currently only the latest version (v5.2) is supported.
 
 ## Reporting a Vulnerability
 
-Email vulnerabilities to [your-email@example.com] or open a private issue.
+Email vulnerabilities to sovereignai86@gmail.com or open a private issue.
 
 ## Known Limitations
 
