@@ -1,0 +1,10 @@
+include README.md
+include LICENSE
+include SECURITY.md
+include CONTRIBUTING.md
+include CODE_OF_CONDUCT.md
+include CHANGELOG.md
+recursive-include src/razor_mesh *.py
+recursive-include tests *.py
+include requirements.txt
+exclude .github/**/*

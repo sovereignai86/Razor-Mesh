@@ -1,0 +1,23 @@
+name: Security Audit
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 0 * * 0"  # Runs every Sunday at midnight
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Install audit tools
+        run: pip install pip-audit bandit
+      - name: Audit Dependencies (CVE Check)
+        run: pip-audit
+      - name: Static Analysis (Bandit)
+        # -ll ignores low-severity issues to keep the signal high
+        run: bandit -r src/ -ll
