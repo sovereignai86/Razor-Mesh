@@ -5,7 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-[![Status: Production Ready](https://img.shields.io/badge/Status-Production_Ready-brightgreen?style=flat-square)](https://github.com/sovereignai86/Razor-Mesh)
+[![Status: Runtime Ready](https://img.shields.io/badge/Status-Run to ime_Ready-brightgreen?style=flat-square)](https://github.com/sovereignai86/Razor-Mesh)
 
 [![CI](https://github.com/sovereignai86/Razor-Mesh/actions/workflows/ci.yml/badge.svg)](https://github.com/sovereignai86/Razor-Mesh/actions)
 
