@@ -156,39 +156,39 @@ async for message in mesh.listen():
 
 ### Security
 
-- ✅ **Ed25519** signatures on every packet (authentication)
+**Ed25519** signatures on every packet (authentication)
 
-- ✅ **X25519** key agreement per-peer (confidentiality)
+**X25519** key agreement per-peer (confidentiality)
 
-- ✅ **ChaCha20Poly1305** AEAD encryption (cipher strength)
+**ChaCha20Poly1305** AEAD encryption (cipher strength)
 
-- ✅ **Replay protection** (nonce cache + timestamp window)
+**Replay protection** (nonce cache + timestamp window)
 
-- ✅ **Persistent node identity** (survives restarts)
+-**Persistent node identity** (survives restarts)
 
 
 ### Networking
 
-- ✅ **Automatic discovery** (UDP broadcast)
+**Automatic discovery** (UDP broadcast)
 
-- ✅ **Self-healing** (suspect → offline transitions)
+**Self-healing** (suspect → offline transitions)
 
-- ✅ **Score-based leader election** (epoch-protected)
+**Score-based leader election** (epoch-protected)
 
-- ✅ **Real Wi-Fi RSSI** (Termux:API integration)
+**Real Wi-Fi RSSI** (Termux:API integration)
 
-- ✅ **Async/await native** (high concurrency)
+**Async/await native** (high concurrency)
 
 
 ### User Experience
 
-- ✅ **Live terminal dashboard** (throughput, latency, RSSI, scores)
+**Live terminal dashboard** (throughput, latency, RSSI, scores)
 
-- ✅ **Interactive messaging** (broadcast chat)
+**Interactive messaging** (broadcast chat)
 
-- ✅ **Graceful shutdown** (Ctrl+C cleanup)
+**Graceful shutdown** (Ctrl+C cleanup)
 
-- ✅ **Structured logging** (debug-friendly)
+**Structured logging** (debug-friendly)
 
 
 ## Architecture
@@ -262,13 +262,13 @@ DESIGNED FOR: Private networks, IoT mesh, emergency comms
 ### Known Limitations (v5.2)
 
 
-- ⚠️ **No mutual authentication** (assumes network boundary security)
+**No mutual authentication** (assumes network boundary security)
 
-- ⚠️ **Basic rate limiting** (expandable for DoS)
+**Basic rate limiting** (expandable for DoS)
 
-- ⚠️ **No forward secrecy** (keys persistent across sessions)
+**No forward secrecy** (keys persistent across sessions)
 
-- ⚠️ **No key rotation** (planned for v6.0)
+**No key rotation** (planned for v6.0)
 
 
 ### Roadmap (v6.0)
@@ -319,7 +319,6 @@ async def main():
 
 asyncio.run(main())
 
-```
 
 
 ### Example 2: Listening for Messages
@@ -334,8 +333,6 @@ async for msg in mesh.listen():
     print(f"  RSSI: {msg.rssi} dBm")
 
     print(f"  Latency: {msg.latency_ms} ms")
-
-```
 
 
 ### Example 3: Custom Protocol Extension
@@ -365,7 +362,6 @@ frame = link.create_frame(
 
 await sock.sendto(frame, ("192.168.1.255", 4446))
 
-```
 
 
 ## Testing
@@ -378,7 +374,6 @@ await sock.sendto(frame, ("192.168.1.255", 4446))
 
 pytest tests/ -v
 
-```
 
 
 ### Run Tests with Coverage
@@ -388,7 +383,6 @@ pytest tests/ -v
 
 pytest tests/ --cov=src/razor_mesh --cov-report=html
 
-```
 
 
 ### Lint
@@ -400,7 +394,6 @@ ruff check src/
 
 black --check src/
 
-```
 
 
 ## Contributing
@@ -422,7 +415,6 @@ pip install -e ".[dev]"  # Install with dev dependencies
 
 pytest tests/
 
-```
 
 
 ## License
@@ -451,7 +443,6 @@ If you use Razor-Mesh in research, please cite:
 
 }
 
-```
 
 
 ## Acknowledgments
@@ -467,40 +458,39 @@ If you use Razor-Mesh in research, please cite:
 ## Support
 
 
-- 📖 **Documentation**: [README.md](README.md)
+**Documentation**: [README.md](README.md)
 
-- 🐛 **Issues**: [GitHub Issues](https://github.com/sovereignai86/Razor-Mesh/issues)
+**Issues**: [GitHub Issues](https://github.com/sovereignai86/Razor-Mesh/issues)
 
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/sovereignai86/Razor-Mesh/discussions)
+**Discussions**: [GitHub Discussions](https://github.com/sovereignai86/Razor-Mesh/discussions)
 
 
 ---
 
 
-**Made with ❤️ on Termux — March 2026**
+**Made on termux rootless 2026**
 
-```
 
 
 **Changes Made:**
 
-- ✅ Added PyPI badge (for future publication)
+- Added PyPI badge (for future publication)
 
-- ✅ "Why Razor-Mesh?" comparison table
+- "Why Razor-Mesh?" comparison table
 
-- ✅ Security model section
+-  Security model section
 
-- ✅ Performance metrics
+- Performance metrics
 
-- ✅ Citation format (for research)
+- Citation format (for research)
 
-- ✅ Architecture diagram
+- Architecture diagram
 
-- ✅ Threat model clearly stated
+- Threat model clearly stated
 
-- ✅ Examples (3 practical use cases)
+- Examples (3 practical use cases)
 
-- ✅ Contributing section improved
+- Contributing section improved
 
 
 ---
@@ -663,7 +653,6 @@ extend-exclude = '''
 
 )/
 
-'''
 
 
 [tool.ruff]
@@ -746,29 +735,27 @@ exclude_lines = [
 
 ]
 
-```
 
 
 **Key Additions:**
 
-- ✅ Proper build backend (hatchling)
+- Proper build backend (hatchling)
 
-- ✅ Author email (for PyPI contact)
+- Author email (for PyPI contact)
 
-- ✅ Keywords (for PyPI search)
+- Keywords (for PyPI search)
 
-- ✅ Classifiers (Development Status, Python versions, OS)
+- Classifiers (Development Status, Python versions, OS)
 
-- ✅ Project URLs (docs, issues, changelog)
+- Project URLs (docs, issues, changelog)
 
-- ✅ Optional dev dependencies
+- Optional dev dependencies
 
-- ✅ Type checking (mypy) configuration
+- Type checking (mypy) configuration
 
-- ✅ Test configuration improvements
+- Test configuration improvements
 
 
----
 
 
 ### **1.3 Create/Update Supporting Documentation (4 hours)**
@@ -776,8 +763,6 @@ exclude_lines = [
 
 #### **A. SECURITY.md (For PyPI Trust)**
 
-
-```markdown
 
 # Security Policy
 
@@ -799,7 +784,7 @@ exclude_lines = [
 ## Reporting Vulnerabilities
 
 
-⚠️ **DO NOT** open a public issue for security vulnerabilities.
+**DO NOT** open a public issue for security vulnerabilities.
 
 
 **Email:** security@razor-mesh.dev  
@@ -831,29 +816,29 @@ exclude_lines = [
 ### What Razor-Mesh Protects Against
 
 
-✅ **Eavesdropping** (ChaCha20Poly1305 encryption)  
+**Eavesdropping** (ChaCha20Poly1305 encryption)  
 
-✅ **Spoofing** (Ed25519 signatures)  
+**Spoofing** (Ed25519 signatures)  
 
-✅ **Replay attacks** (nonce cache + timestamp window)  
+**Replay attacks** (nonce cache + timestamp window)  
 
-✅ **Tampering** (AEAD authentication tags)  
+**Tampering** (AEAD authentication tags)  
 
-✅ **Key compromise detection** (persistent node IDs)  
+**Key compromise detection** (persistent node IDs)  
 
 
 ### What Razor-Mesh Does NOT Protect Against
 
 
-❌ **Node compromise** (if node is stolen, all is lost)  
+ **Node compromise** (if node is stolen, all is lost)  
 
-❌ **Network-level attacks** (assumes trusted network boundary)  
+**Network-level attacks** (assumes trusted network boundary)  
 
-❌ **DoS attacks** (basic rate limiting only)  
+**DoS attacks** (basic rate limiting only)  
 
-❌ **Insider threats** (all peers trusted by design)  
+**Insider threats** (all peers trusted by design)  
 
-❌ **Passive timing attacks** (not hardened against)  
+**Passive timing attacks** (not hardened against)  
 
 
 ### Known Limitations
@@ -904,11 +889,11 @@ pip-audit
 ### Testing & Auditing
 
 
-- ✅ Unit tests cover all crypto operations
+- Unit tests cover all crypto operations
 
-- ✅ Integration tests on real networks (Termux, LAN)
+- Integration tests on real networks (Termux, LAN)
 
-- ⏳ Third-party audit planned for v6.0
+- Third-party audit planned for v6.0
 
 
 ## Version History
@@ -947,17 +932,17 @@ Welcome! We're excited you're interested in contributing.
 ## Quick Links
 
 
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/sovereignai86/Razor-Mesh/discussions)
+- **Discussions**: [GitHub Discussions](https://github.com/sovereignai86/Razor-Mesh/discussions)
 
-- 🐛 **Issues**: [GitHub Issues](https://github.com/sovereignai86/Razor-Mesh/issues)
+- **Issues**: [GitHub Issues](https://github.com/sovereignai86/Razor-Mesh/issues)
 
-- 📖 **Documentation**: [README.md](README.md)
+- **Documentation**: [README.md](README.md)
 
 
 ## Ways to Contribute
 
 
-### 1. Report Bugs 🐛
+### 1. Report Bugs 
 
 
 Found a bug? [Open an issue](https://github.com/sovereignai86/Razor-Mesh/issues/new?template=bug_report.md).
@@ -974,7 +959,7 @@ Found a bug? [Open an issue](https://github.com/sovereignai86/Razor-Mesh/issues/
 - Error message/traceback
 
 
-### 2. Suggest Features 💡
+### 2. Suggest Features 
 
 
 Have an idea? [Start a discussion](https://github.com/sovereignai86/Razor-Mesh/discussions/new?category=ideas).
@@ -989,7 +974,7 @@ Have an idea? [Start a discussion](https://github.com/sovereignai86/Razor-Mesh/d
 - Why it's valuable
 
 
-### 3. Submit Code 📝
+### 3. Submit Code 
 
 
 ### Setup Development Environment
@@ -1093,7 +1078,7 @@ pip install -e ".[dev]"
 
 ```python
 
-# ✅ Good
+# Good
 
 async def broadcast(self, message: str) -> bool:
 
@@ -1101,7 +1086,7 @@ async def broadcast(self, message: str) -> bool:
 
     
 
-# ❌ Bad
+# Bad
 
 async def broadcast(self, message):
 
@@ -1205,14 +1190,14 @@ Maintainers use this process (for reference):
 ## Questions?
 
 
-- 💬 Open a [Discussion](https://github.com/sovereignai86/Razor-Mesh/discussions)
+-  Open a [Discussion](https://github.com/sovereignai86/Razor-Mesh/discussions)
 
-- 🔐 Security issue? See [SECURITY.md](SECURITY.md)
+- Security issue? See [SECURITY.md](SECURITY.md)
 
 
 ---
 
 
-**Thanks for contributing to Razor-Mesh!** 🙌
+**Thanks for contributing to Razor-Mesh!** 
 
 
